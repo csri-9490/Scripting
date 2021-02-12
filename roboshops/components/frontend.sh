@@ -1,7 +1,7 @@
 #!/bin/bash
 #set -e  #shel script will run even there is error,so if we give 'set -e', it will stop if we get error
 COMPONENT=frontend
-source common.sh
+source components/common.sh
 Print "strated insallation"
 #yum install nginx -y
 Print "installation going"
