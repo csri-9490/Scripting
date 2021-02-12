@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e  #shel script will run even there is error,so if we give 'set -e', it will stop if we get error
 yum install nginx -y
 systemctl enable nginx
 systemctl start nginx
