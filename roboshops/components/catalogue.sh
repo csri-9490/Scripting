@@ -1,2 +1,3 @@
 #!/bin/bash
-echo catgh retert
+echo first cat
+echo second cat

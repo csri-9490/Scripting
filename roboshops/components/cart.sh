@@ -1,3 +1,3 @@
 #!/bin/bash
-echo cart ertetr
+echo first cart
 echo second cart
