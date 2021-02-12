@@ -2,9 +2,10 @@
 #set -e  #shel script will run even there is error,so if we give 'set -e', it will stop if we get error
 COMPONENT=frontend
 source components/common.sh
-Print "strated insallation"
-#yum install nginx -y
-Print "installation going"
+Print "nginx insallation"  "yum install nginx -y"
+yum install nginx -y
+stat $? #$? is exit status of yumm  command
+Print "start nginx" "systemctl start nginx"
 exit
 systemctl enable nginx
 systemctl start nginx
