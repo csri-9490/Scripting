@@ -4,6 +4,7 @@ COMPONENT=frontend
 source components/common.sh
 Print "nginx insallation"  "yum install nginx -y"
 yum install nginx -y
+#yum install nginx -y &>/tmp/log  {if we don't want output on screen, wants in log file,need to use this}
 stat $? #$? is exit status of yumm  command
 Print "start nginx" "systemctl start nginx"
 exit
