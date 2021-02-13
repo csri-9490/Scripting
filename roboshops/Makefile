@@ -3,7 +3,7 @@ help:
 common:
 	@sh components/common.sh
 cart:common
-cart:common   #install cart component
+cart:   #install cart component
 	@sh components/cart.sh
 	#@sudo sh components/cart.sh   <when run 'make fronend' with normal user, it will ask aurtize, need to give this line
 catalogue:common  #install catalogue compemnts
