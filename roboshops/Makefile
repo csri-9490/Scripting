@@ -1,3 +1,5 @@
+help:
+	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
 common:
 	@sh components/common.sh
 cart:common
