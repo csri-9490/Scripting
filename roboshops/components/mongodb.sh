@@ -15,7 +15,7 @@ yum install -y mongodb-org
 Stat $?
 
 Print "Update mongo DB config" "sed"
-sed -i -e 's/127.0.0.1 to 0.0.0.0' /etc/mongod.conf
+sed -i -e 's/127.0.0.1 to 0.0.0.0/' /etc/mongod.conf
 Stat $?
 
 Print "Start MongoDB service" "systemctl start mongod"
