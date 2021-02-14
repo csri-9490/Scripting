@@ -15,4 +15,4 @@ export component
 export IpAddress
 envsubst <record.json>/tmp/${component}.json
 
-aws route53 change-resource-record-sets --hosted-zone-id Z0438602WZKT8OQ2PFB4 --change-batch file:///tmp/${component}.json
+aws route53 change-resource-record-sets --hosted-zone-id Z0438602WZKT8OQ2PFB4 --change-batch file:///tmp/"${component}".json
