@@ -17,8 +17,10 @@ Print  "Extract Catalogue Component Code" "rm -rf /home/roboshop/catalogue && mk
 rm -rf /home/roboshop/catalogue && mkdir -p /home/roboshop/catalogue && cd /home/roboshop/catalogue && unzip /tmp/catalogue.zip
 Stat $?
 
-exit
-$ npm install
+
+Print "ninstall nodejs dependies" "npm install"
+npm install --unsafe-perm
+Stat $?
 # mv /home/roboshop/catalogue/systemd.service /etc/systemd/system/catalogue.service
 # systemctl daemon-reload
 # systemctl start catalogue
