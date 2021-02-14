@@ -3,7 +3,7 @@
   "Changes": [{
     "Action": "CREATE",
     "ResourceRecordSet": {
-      "Name": "${component}.srikanthc.tech",
+      "Name": "${component}-ss.srikanthc.tech",
       "Type": "A",
       "TTL": 300,
       "ResourceRecords": [{ "Value": "${IpAddress}"}]
