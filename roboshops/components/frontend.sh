@@ -29,5 +29,5 @@ Stat $?
 Print "start nginx" "systemctl start nginx"
 #exit
 systemctl enable nginx
-systemctl restart nginx
+systemctl start nginx
 Stat $?
