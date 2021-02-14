@@ -4,7 +4,7 @@ help:  ## show this help
 common:
 	@sh components/common.sh
 
-cart: common     	## install cart component   echo -e "\e[31mcolorname\e[0m"
+cart: common     	## install cart component
 	@sh components/cart.sh
 
 catalogue:common     ## install catalogue component
