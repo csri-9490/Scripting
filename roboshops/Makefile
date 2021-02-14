@@ -13,4 +13,5 @@ frontend: common
 frontend:  ##  install frontend component
 	@sh components/frontend.sh
 mongodb:common
+mongodb:	###  install mongodb componen
 	@sh components/mongodb.sh
