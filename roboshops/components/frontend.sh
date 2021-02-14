@@ -26,8 +26,7 @@ Print "setup nginx config for roboshop" "mv localhost.conf /etc/nginx/default.d/
 mv localhost.conf /etc/nginx/default.d/roboshop.conf
 Stat $?
 
-Print "start nginx" "systemctl start nginx"
-#exit
+Print "Starting Nginx Service" "systemctl start nginx"
 systemctl enable nginx
-systemctl start nginx
+systemctl restart nginx
 Stat $?
