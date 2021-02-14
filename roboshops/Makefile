@@ -21,5 +21,6 @@ cart: common     	## install cart component
 
 catalogue:common     ## install catalogue component
 	@echo does something
-frontend: common     ##  install frontend component
+frontend: common
+drontend:  ##  install frontend component
 	@echo does something
