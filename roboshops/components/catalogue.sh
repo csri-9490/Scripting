@@ -19,7 +19,7 @@ Stat $?
 
 
 Print "ninstall nodejs dependies" "npm install"
-npm install --unsafe-perm
+npm install #--unsafe-perm
 Stat $?
 # mv /home/roboshop/catalogue/systemd.service /etc/systemd/system/catalogue.service
 # systemctl daemon-reload
