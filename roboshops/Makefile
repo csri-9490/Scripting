@@ -17,10 +17,10 @@ common:
 	@sh components/common.sh
 
 cart: common     	## install cart component
-	@echo does somthing
+	@sh components/cart.sh
 
 catalogue:common     ## install catalogue component
-	@echo does something
+	@sh components/catalogue.sh
 frontend: common
 frontend:  ##  install frontend component
-	@echo does something
+	@sh components/frontend.sh
