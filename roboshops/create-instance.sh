@@ -12,6 +12,6 @@ fi
 IpAddress=$(aws ec2 describe-instances  --filters "Name=tag:Name,Values=${component}"  --query 'Reservations[*].Instances[*].PrivateIpAddress' --output text)
 export component
 export IpAddress
-envsubt <record.json>/tmp/${component}.json
+envsubst <record.json>/tmp/${component}.json
 
 #aws route53 change-resource-record-sets --hosted-zone-id Z0438602WZKT8OQ2PFB4 --change-batch file:///tmp/${component}.json
