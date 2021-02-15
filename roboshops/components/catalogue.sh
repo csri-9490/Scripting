@@ -34,3 +34,4 @@ Stat $?
 Print "Start Catalogue Service" "systemctl daemon-reload && systemctl restart catalogue && systemctl enable catalogue"
 systemctl daemon-reload && systemctl restart catalogue && systemctl enable catalogue
 Stat $?
+#
