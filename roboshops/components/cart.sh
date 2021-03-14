@@ -12,7 +12,7 @@ Print "Adding RoboShop Project User" "useradd roboshop"
 id roboshop || useradd roboshop
 Stat $?
 
-Print "Download Cart Component Code" 'curl -s -L -o /tmp/cart.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip"'
+Print "Download Cart Component Code" 'curl -s -L -o /tmp/cart.zip "https://github.com/roboshop-devops-project/cart/archive/main.zip"'
 
 curl -s -L -o /tmp/cart.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip"
 
