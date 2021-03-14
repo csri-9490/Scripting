@@ -27,8 +27,8 @@ systemctl restart mongod
 Stat $?
 
 
-Print "Download MongoDB Schema" 'curl -s -L -o /tmp/mongodb.zip "https://dev.azure.com/DevOps-Batches/f635c088-1047-40e8-8c29-2e3b05a38010/_apis/git/repositories/03f2af34-e227-44b8-a9f2-c26720b34942/items?path=%2F&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=master&resolveLfs=true&%24format=zip&api-version=5.0&download=true"'
-curl -s -L -o /tmp/mongodb.zip "https://dev.azure.com/DevOps-Batches/f635c088-1047-40e8-8c29-2e3b05a38010/_apis/git/repositories/03f2af34-e227-44b8-a9f2-c26720b34942/items?path=%2F&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=master&resolveLfs=true&%24format=zip&api-version=5.0&download=true"
+Print "Download MongoDB Schema" 'curl -s -L -o /tmp/mongodb.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip"'
+curl -s -L -o /tmp/mongodb.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip"
 Stat $?
 
 Print "Load Schema" "cd /tmp && unzip -o mongodb.zip && mongo < catalogue.js && mongo < users.js "
